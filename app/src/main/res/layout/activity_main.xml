@@ -6,17 +6,58 @@
     android:layout_height="match_parent"
     android:background="#95BDDD"
     tools:context=".MainActivity"
-    android:paddingTop="300dp">
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="230dp"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="90dp"
-        android:background="#951C1C"
-        android:backgroundTint="#FFC5C5"
-        android:text=" ~ WELCOME ~"
-        app:cornerRadius="21dp"
-        app:iconTint="#130E0E" />
+        android:text="MAIN MENU"
+        android:textSize="35dp"
+        android:fontFamily="@font/chewy"
+        android:gravity="center"
+        />
+
+    <ListView
+        android:id="@+id/ListViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/pagination_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="21dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="21dp">
+        <Button
+            android:id="@+id/prev_page"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
+            android:minHeight="0dp" />
+        <HorizontalScrollView
+            android:id="@+id/page_number_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="25"
+            android:paddingHorizontal="18dp">
+            <LinearLayout
+                android:id="@+id/btn_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"/>
+        </HorizontalScrollView>
+    <Button
+        android:id="@+id/next_page"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/baseline_arrow_forward_ios_24"
+        android:minHeight="0dp" />
+    </LinearLayout>
+
 </LinearLayout>
 

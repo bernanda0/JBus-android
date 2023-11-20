@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutMeActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/initial"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginVertical="30dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:text="P"
+        android:textSize="48dp"
+        android:layout_marginHorizontal="150dp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize ="16sp"
+            android:hint="USERNAME" />
+
+        <TextView
+            android:id="@+id/usernameAboutMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            tools:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize ="16sp"
+            android:hint="EMAIL" />
+
+        <TextView
+            android:id="@+id/emailAboutMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            tools:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize ="16sp"
+            android:hint="BALANCE" />
+
+        <TextView
+            android:id="@+id/balanceAboutMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            tools:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="85dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="197dp"
+            android:layout_height="match_parent"
+            android:hint="Top Up Amount"
+            android:inputType="number"
+            android:paddingTop="10dp"
+            android:paddingRight="1dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="80dp"
+            android:background="#000000"
+            android:text="Top Up"
+            android:textColorHighlight="#000000"
+            android:textColorLink="#000000"
+            app:cornerRadius="21dp"
+            app:iconTint="#000000" />
+    </LinearLayout>
+
+</LinearLayout>
