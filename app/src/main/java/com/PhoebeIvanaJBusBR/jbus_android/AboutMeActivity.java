@@ -38,8 +38,6 @@ public class AboutMeActivity extends AppCompatActivity {
         balance = findViewById(R.id.balanceAboutMe);
         topUp = findViewById(R.id.TopUpID);
         topUpButton = findViewById(R.id.button);
-        logoName = username.toString().charAt(0);
-        initialTV.setText(""+ logoName);
         mContext = this;
         getAccount();
         topUpButton.setOnClickListener(e->{handleTopUp();});
@@ -79,6 +77,7 @@ public class AboutMeActivity extends AppCompatActivity {
                     Account responseAccount = response.body();
                     username.setText(responseAccount.name);
                     email.setText(responseAccount.email);
+                    initialTV.setText(""+ responseAccount.name.toString().charAt(0));
                     balance.setText("" + responseAccount.balance);
                 }
             }
