@@ -4,44 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutMeActivity"
-    android:orientation="vertical">
+    android:background="#E2D1FF"
+    android:orientation="vertical"
+    tools:context=".AboutMeActivity">
 
     <TextView
         android:id="@+id/initial"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_marginHorizontal="150dp"
         android:layout_marginVertical="30dp"
         android:background="@drawable/circle"
         android:backgroundTint="@color/black"
-        android:textColor="@color/white"
-        android:text="P"
-        android:textSize="48dp"
-        android:layout_marginHorizontal="150dp"
         android:gravity="center"
-        />
+        android:text="P"
+        android:textColor="@color/white"
+        android:textSize="48dp" />
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="10dp"
-    android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:textSize ="16sp"
-            android:hint="USERNAME" />
+            android:hint="USERNAME"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/usernameAboutMe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="right"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
             tools:text="-" />
 
     </LinearLayout>
@@ -56,17 +56,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:textSize ="16sp"
-            android:hint="EMAIL" />
+            android:hint="EMAIL"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/emailAboutMe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="right"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
             tools:text="-" />
 
     </LinearLayout>
@@ -81,17 +81,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:textSize ="16sp"
-            android:hint="BALANCE" />
+            android:hint="BALANCE"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/balanceAboutMe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="right"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
             tools:text="-" />
 
     </LinearLayout>
@@ -99,11 +99,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:layout_marginTop="85dp"
+        android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/TopUpID"
             android:layout_width="197dp"
             android:layout_height="match_parent"
             android:hint="Top Up Amount"

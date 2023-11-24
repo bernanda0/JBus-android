@@ -1,8 +1,5 @@
 package com.PhoebeIvanaJBusBR.jbus_android;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +12,9 @@ import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.PhoebeIvanaJBusBR.jbus_android.model.Bus;
 
@@ -115,7 +115,6 @@ public class MainActivity extends AppCompatActivity {
         int scrollX = item.getLeft() - (pageScroll.getWidth() - item.getWidth()) / 2;
         pageScroll.smoothScrollTo(scrollX, 0);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
