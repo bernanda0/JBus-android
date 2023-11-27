@@ -3,7 +3,9 @@ package com.PhoebeIvanaJBusBR.jbus_android;
 import static com.PhoebeIvanaJBusBR.jbus_android.LoginActivity.loggedAccount;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -28,6 +30,7 @@ public class AboutMeActivity extends AppCompatActivity {
     Context mContext;
     private Button topUpButton = null;
     private EditText topUp;
+    private Button noRenter,yesRenter = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,11 +41,12 @@ public class AboutMeActivity extends AppCompatActivity {
         balance = findViewById(R.id.balanceAboutMe);
         topUp = findViewById(R.id.TopUpID);
         topUpButton = findViewById(R.id.button);
+        noRenter = findViewById(R.id.noRenter);
+        yesRenter = findViewById(R.id.yesRenter);
         mContext = this;
         getAccount();
         topUpButton.setOnClickListener(e->{handleTopUp();});
     }
-
     protected void handleTopUp(){
         mApiService.topUp(loggedAccount.id, Double.parseDouble(topUp.getText().toString())).enqueue(new Callback<BaseResponse<Double>>() {
             @Override
@@ -79,6 +83,16 @@ public class AboutMeActivity extends AppCompatActivity {
                     email.setText(responseAccount.email);
                     initialTV.setText(""+ responseAccount.name.toString().charAt(0));
                     balance.setText("" + responseAccount.balance);
+                    if (responseAccount.company==null){
+                        noRenter.setVisibility(View.VISIBLE);
+                        yesRenter.setVisibility(View.GONE);
+                        noRenter.setOnClickListener(e->{moveActivity(mContext, RegisterRenterActivity.class);});
+                    }
+                    else{
+                        noRenter.setVisibility(View.GONE);
+                        yesRenter.setVisibility(View.VISIBLE);
+                        yesRenter.setOnClickListener(e->{moveActivity(mContext, ManageBusActivity.class);});
+                    }
                 }
             }
 
@@ -90,5 +104,9 @@ public class AboutMeActivity extends AppCompatActivity {
                 Toast.makeText(mContext,t.getMessage(),Toast.LENGTH_SHORT).show();
             }
         });
+    }
+    private void moveActivity(Context ctx, Class<?> cls){
+        Intent intent = new Intent(ctx,cls);
+        startActivity(intent);
     }
 }

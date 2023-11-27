@@ -2,6 +2,7 @@ package com.PhoebeIvanaJBusBR.jbus_android.request;
 
 import com.PhoebeIvanaJBusBR.jbus_android.model.Account;
 import com.PhoebeIvanaJBusBR.jbus_android.model.BaseResponse;
+import com.PhoebeIvanaJBusBR.jbus_android.model.Renter;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -22,6 +23,9 @@ public interface BaseApiService {
 
     @POST("account/{id}/topUp")
     Call<BaseResponse<Double>> topUp(@Path("id") int id, @Query("amount") Double amount);
+
+    @POST("account/{id}/registerRenter")
+    Call<BaseResponse<Renter>> registerRenter(@Path("id") int id, @Query("companyName") String companyName,@Query("address")String address, @Query("phoneNumber") String phoneNumber);
 
 }
 

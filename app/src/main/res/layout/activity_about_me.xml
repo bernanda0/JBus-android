@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E2D1FF"
+    android:background="#A3C2E3"
     android:orientation="vertical"
     tools:context=".AboutMeActivity">
 
@@ -15,10 +15,10 @@
         android:layout_marginHorizontal="150dp"
         android:layout_marginVertical="30dp"
         android:background="@drawable/circle"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/white"
         android:gravity="center"
         android:text="P"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="48dp" />
 
     <LinearLayout
@@ -101,7 +101,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="85dp"
-        android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
         <EditText
@@ -125,5 +124,31 @@
             app:cornerRadius="21dp"
             app:iconTint="#000000" />
     </LinearLayout>
+
+
+    <Button
+        android:id="@+id/noRenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="60dp"
+        android:text="You're not Registered as a Renter\n\n~ Register Your Company ~"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textSize="12.5dp" />
+
+
+    <Button
+        android:id="@+id/yesRenter"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="10dp"
+        android:paddingLeft="100dp"
+        android:text="You're Registered as a Renter\n\n~ Manage Bus ~"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textSize="12.5dp" />
 
 </LinearLayout>

@@ -14,10 +14,13 @@
         android:theme="@style/Theme.JBusandroid"
         tools:targetApi="31">
         <activity
-            android:name=".BusView"
+            android:name=".AboutMeActivity"
             android:exported="false" />
         <activity
-            android:name=".AboutMeActivity"
+            android:name=".RegisterRenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageBusActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

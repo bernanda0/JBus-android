@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A9B4F1"
+    android:background="#A7CFEF"
     android:orientation="vertical"
-    tools:context=".RegisterActivity">
-
+    tools:context=".RegisterRenterActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -16,7 +15,7 @@
         android:layout_marginHorizontal="50dp"
         android:fontFamily="@font/chewy"
         android:paddingTop="30dp"
-        android:text="Register Your Account" />
+        android:text="Register Your Company" />
 
     <TextView
         android:id="@+id/textView3"
@@ -25,55 +24,54 @@
         android:layout_marginHorizontal="50dp"
         android:fontFamily="@font/amiri"
         android:paddingTop="0dp"
-        android:text="Input username,email, and password"
+        android:text="Input company name, address, and phone number"
         android:textFontWeight="500" />
 
     <LinearLayout
-        android:id="@+id/login_Form"
+        android:id="@+id/groupData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/username_register"
+            android:id="@+id/companyName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:fontFamily="@font/amiri"
-            android:hint="Username"
+            android:hint="Company Name"
             android:inputType="textEmailAddress"
             android:paddingTop="145dp" />
 
         <EditText
-            android:id="@+id/email_address"
+            android:id="@+id/companyAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:fontFamily="@font/amiri"
-            android:hint="Email"
+            android:hint="Address"
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/password_register"
+            android:id="@+id/companyPhoneNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:fontFamily="@font/amiri"
-            android:hint="Password"
+            android:hint="Phone Number"
             android:inputType="textPassword" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/renterRegisterButton"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="80dp"
         android:background="#951C1C"
-
         android:backgroundTint="#FFC5C5"
         android:text="Register"
         app:cornerRadius="21dp"

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6EFB2"
-    android:backgroundTint="#A0AAE1"
+    android:background="#FFFFFD"
+    android:backgroundTint="#B2CFF3"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".LoginActivity"> <!-- Add this line -->
@@ -56,9 +56,8 @@
 
         android:backgroundTint="#FFC5C5"
         android:text="LOGIN ACCOUNT"
-        app:iconTint="#130E0E"
         app:cornerRadius="21dp"
-        />
+        app:iconTint="#130E0E" />
 
     <TextView
         android:layout_width="match_parent"
@@ -69,6 +68,7 @@
         android:text="Don't have an account?"
         android:textAlignment="center"
         android:textColor="#000000" />
+
     <TextView
         android:id="@+id/register_now"
         android:layout_width="match_parent"
@@ -81,7 +81,7 @@
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
 </LinearLayout>
 
