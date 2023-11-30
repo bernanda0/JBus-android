@@ -113,7 +113,7 @@
             android:paddingRight="1dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/addBusButton"
             android:layout_width="109dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="80dp"

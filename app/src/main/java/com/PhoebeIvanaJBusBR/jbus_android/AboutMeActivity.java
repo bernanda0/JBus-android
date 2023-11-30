@@ -40,7 +40,7 @@ public class AboutMeActivity extends AppCompatActivity {
         email = findViewById(R.id.emailAboutMe);
         balance = findViewById(R.id.balanceAboutMe);
         topUp = findViewById(R.id.TopUpID);
-        topUpButton = findViewById(R.id.button);
+        topUpButton = findViewById(R.id.addBusButton);
         noRenter = findViewById(R.id.noRenter);
         yesRenter = findViewById(R.id.yesRenter);
         mContext = this;

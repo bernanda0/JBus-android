@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private Button nextButton = null;
     private ListView busListView = null;
     private HorizontalScrollView pageScroll = null;
-
+    private ImageView busBlue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

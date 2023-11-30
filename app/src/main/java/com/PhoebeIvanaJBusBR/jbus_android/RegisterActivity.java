@@ -31,12 +31,12 @@ public class RegisterActivity extends AppCompatActivity {
         name = findViewById(R.id.username_register);
         email = findViewById(R.id.email_address);
         password = findViewById(R.id.password_register);
-        registerButton = findViewById(R.id.button);
+        registerButton = findViewById(R.id.addBusButton);
         registerButton.setOnClickListener(e->handleRegister());
         getSupportActionBar().hide();
     }
 
-    protected  void handleRegister(){
+    protected void handleRegister(){
         String nameS = name.getText().toString();
         String emailS = email.getText().toString();
         String passwordS = password.getText().toString();

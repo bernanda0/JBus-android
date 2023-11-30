@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/chewy"
         android:gravity="center"
-        android:text="MAIN MENU"
-        android:textSize="35dp" />
+        android:text="Manage Bus Activity"
+        android:textSize="25dp" />
 
     <ListView
         android:id="@+id/ListViewManageBus"

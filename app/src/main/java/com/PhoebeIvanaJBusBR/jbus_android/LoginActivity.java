@@ -31,10 +31,10 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        inputEmail = findViewById(R.id.editTextTextEmailAddress);
-        inputPassword = findViewById(R.id.editTextTextPassword2);
-        registerNow = findViewById(R.id.register_now);
-        loginButton = findViewById(R.id.button);
+        inputEmail = findViewById(R.id.emailInput);
+        inputPassword = findViewById(R.id.passInput);
+        registerNow = findViewById(R.id.registerNow);
+        loginButton = findViewById(R.id.addBusButton2);
         mContext = this;
         registerNow.setOnClickListener(e->{moveActivity(this, RegisterActivity.class);});
         loginButton.setOnClickListener(e->{handleInput();});
@@ -85,6 +85,4 @@ public class LoginActivity extends AppCompatActivity {
     private void viewToast(Context ctx, String message){
         Toast.makeText(ctx,message,Toast.LENGTH_SHORT).show();
     }
-
-
 }
